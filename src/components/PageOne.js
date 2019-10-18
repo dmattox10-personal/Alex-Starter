@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom'
 
 import Nav from './Nav'
 
+/*
+<Nav active='1' /> is how we control the NAV component
+Everything is in a div called content, then organized into Rows and Columns
+using my Grid.css file
+Try changing 'columni' to 'columns' and see CSS take over!
+*/
+
 class PageOne extends Component {
     render() {
         return(
