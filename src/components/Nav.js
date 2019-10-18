@@ -19,6 +19,11 @@ const Three = () => {
         <li className="three"><Link to="/3">Three</Link></li>
     )
 }
+const Four = () => {
+    return (
+        <li className="four"><Link to="/4">Four</Link></li>
+    )
+}
 // This is where we set the ACTIVE menu item to be so in CSS with className='active'
 // Changing CSS classnames with code is so powerful!
 const OneA = () => {
@@ -38,6 +43,11 @@ const ThreeA = () => {
         <li className="three"><Link to="/3" className='active'>Three</Link></li>
     )
 }
+const FourA = () => {
+    return (
+        <li className="four"><Link to="/4" className='active'>Four</Link></li>
+    )
+}
 
 class Nav extends Component {
     render() {
@@ -54,6 +64,7 @@ class Nav extends Component {
                                 <OneA />
                                 <Two />
                                 <Three />
+                                <Four />
                             </ul>
                             </div>
                         </header>
@@ -69,6 +80,7 @@ class Nav extends Component {
                                 <One />
                                 <TwoA />
                                 <Three />
+                                <Four />
                             </ul>
                             </div>
                         </header>
@@ -84,6 +96,22 @@ class Nav extends Component {
                                 <One />
                                 <Two />
                                 <ThreeA />
+                                <Four />
+                            </ul>
+                            </div>
+                        </header>
+                    </div>
+                )
+            case '4':
+                return(
+                    <div className='news'>
+                        <header>
+                            <div class="nav">
+                            <ul>
+                                <One />
+                                <Two />
+                                <Three />
+                                <FourA />
                             </ul>
                             </div>
                         </header>
@@ -99,6 +127,7 @@ class Nav extends Component {
                                 <One />
                                 <Two />
                                 <Three />
+                                <Four />
                             </ul>
                             </div>
                         </header>

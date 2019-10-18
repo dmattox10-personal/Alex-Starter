@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import PageOne from './components/PageOne'
 import PageTwo from './components/PageTwo'
 import PageThree from './components/PageThree'
+import Blank from './components/Blank'
 
 import './App.css'
 import './Grid.css'
@@ -16,6 +17,7 @@ function App() {
         <Route exact path='/' component={ PageOne } />
         <Route exact path='/2' component={ PageTwo } />
         <Route exact path='/3' component={ PageThree } />
+        <Route exact path='/4' component={ Blank } />
       </Router>
     </div>
   )
